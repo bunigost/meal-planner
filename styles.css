@@ -233,49 +233,38 @@ body {
 
 @media (max-width: 768px) {
 
-  /* Make board easier to scroll */
-  .board {
-    padding: 6px;
-    gap: 14px;
-  }
-
-  /* Switch grid rows into stacked cards */
+  /* make columns narrower but KEEP GRID */
   .row {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 80px 1fr 1fr;
     gap: 6px;
-    background: white;
-    padding: 10px;
-    border-radius: 14px;
   }
 
-  /* Day becomes full-width header */
   .day {
-    width: 100%;
-    justify-content: flex-start;
-    padding: 10px;
-    font-size: 1rem;
+    font-size: 0.85rem;
+    padding: 6px;
   }
 
-  /* Slots stack nicely */
   .slot {
-    min-height: 60px;
-  }
-
-  /* Palette becomes horizontal scroll instead of wrapping */
-  .palette {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    justify-content: flex-start;
-    padding-bottom: 6px;
+    min-height: 55px;
+    padding: 4px;
   }
 
   .card {
-    white-space: nowrap;
-    flex: 0 0 auto;
+    font-size: 12px;
+    padding: 5px 8px;
+    margin: 3px 0;
   }
 
-  /* Modal fits small screens better */
+  /* palette stays usable but tighter */
+  .palette {
+    gap: 6px;
+  }
+
+  .card {
+    max-width: 140px;
+  }
+
+  /* modal fixes */
   .modal-content {
     width: 92vw;
   }
