@@ -230,3 +230,53 @@ html, body {
 body {
   padding-bottom: 40vh; /* gives space when keyboard opens */
 }
+
+@media (max-width: 768px) {
+
+  /* Make board easier to scroll */
+  .board {
+    padding: 6px;
+    gap: 14px;
+  }
+
+  /* Switch grid rows into stacked cards */
+  .row {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background: white;
+    padding: 10px;
+    border-radius: 14px;
+  }
+
+  /* Day becomes full-width header */
+  .day {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  /* Slots stack nicely */
+  .slot {
+    min-height: 60px;
+  }
+
+  /* Palette becomes horizontal scroll instead of wrapping */
+  .palette {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 6px;
+  }
+
+  .card {
+    white-space: nowrap;
+    flex: 0 0 auto;
+  }
+
+  /* Modal fits small screens better */
+  .modal-content {
+    width: 92vw;
+  }
+}
