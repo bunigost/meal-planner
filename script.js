@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	// ----------------------
 	// DAYS
 	// ----------------------
-	let days = ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven"];
+	let days = ["Sam", "Dim", "Lun", "Mar", "Mer", "Jeu", "Ven"];
 	// ----------------------
 	// STATE
 	// ----------------------
